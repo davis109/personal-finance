@@ -1,4 +1,12 @@
 {
   "version": 2,
-  "public": true
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://sebastiandavis109:w5sOiUfpCpicHucL@cluster0.j88wlrl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  }
 } 
