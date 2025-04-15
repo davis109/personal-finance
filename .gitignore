@@ -66,7 +66,4 @@ Thumbs.db
 
 # Application specific
 /public/uploads/
-.cache/
-
-# Redundant directories
-/finance-app 
+.cache/ 

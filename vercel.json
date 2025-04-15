@@ -1,10 +1,8 @@
 {
-  "version": 2,
   "buildCommand": "npm run build",
-  "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
   "env": {
-    "IS_DEMO": "true"
+    "MONGODB_URI": "mongodb+srv://sebastiandavis109:w5sOiUfpCpicHucL@cluster0.j88wlrl.mongodb.net/finance?retryWrites=true&w=majority&appName=Cluster0"
   }
 } 
