@@ -1,13 +1,16 @@
+'use client';
+
 import './globals.css'
+import { ThemeProvider } from './contexts/ThemeProvider';
 
 export const metadata = {
-  title: 'Personal Finance Tracker',
-  description: 'Track your finances with ease',
+  title: 'Finance Tracker',
+  description: 'Track and manage your personal finances',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link 
           rel="stylesheet" 
@@ -17,8 +20,8 @@ export default function RootLayout({ children }) {
           referrerPolicy="no-referrer" 
         />
       </head>
-      <body>
-        {children}
+      <body className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   )

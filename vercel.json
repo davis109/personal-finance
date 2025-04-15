@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
   "env": {
-    "MONGODB_URI": "mongodb+srv://sebastiandavis109:w5sOiUfpCpicHucL@cluster0.j88wlrl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "IS_DEMO": "true"
   }
 } 

@@ -6,7 +6,8 @@ const nextConfig = {
     serverComponentsExternalPackages: ['mongoose']
   },
   env: {
-    MONGODB_URI: process.env.MONGODB_URI,
+    MONGODB_URI: process.env.MONGODB_URI || "mongodb://placeholder:placeholder@localhost:27017/placeholder",
+    IS_DEMO: "true"
   }
 };
 
