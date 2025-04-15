@@ -1,12 +1,9 @@
 {
   "version": 2,
   "public": true,
-  "buildCommand": "npm install",
-  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "env": {
-    "MONGODB_URI": "mongodb+srv://sebastiandavis109:w5sOiUfpCpicHucL@cluster0.j88wlrl.mongodb.net/finance?retryWrites=true&w=majority&appName=Cluster0"
-  }
+  ]
 } 
